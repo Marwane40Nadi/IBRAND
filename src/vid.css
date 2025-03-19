@@ -1,0 +1,11 @@
+#vidDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  transform: scale(0.8);
+}
+video {
+  border-radius: 25px;
+  position: relative;
+  bottom: 250px;
+}

@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap");
+.CardsDiv {
+  transform: scale(0.9);
+  padding: 0;
+  margin-top: -250px;
+}
+#firstCard {
+  font-family: "Tajawal", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 350px;
+  height: 400px;
+  text-align: center;
+  transition: opacity 1s ease, transform 1s ease;
+  opacity: 0;
+}
+
+.from-left {
+  transform: translateX(-100px);
+}
+
+.from-right {
+  transform: translateX(100px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.affiliate,
+.seller {
+  font-style: italic;
+  color: gray;
+  font-size: 29px;
+  position: relative;
+  bottom: 20px;
+  font-weight: bolder;
+}
+
+p {
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+.btn {
+  background: linear-gradient(
+    90deg,
+    rgb(112, 6, 190),
+    rgb(109, 19, 169),
+    rgb(118, 41, 173),
+    rgb(84, 28, 181),
+    rgb(105, 12, 189)
+  );
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  border-radius: 25px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+}
+
+h1 {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+#p2 {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#p3 {
+  font-size: 20px;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: linear-gradient(
+    90deg,
+    rgb(112, 6, 190),
+    rgb(109, 19, 169),
+    rgb(118, 41, 173),
+    rgb(84, 28, 181),
+    rgb(105, 12, 189)
+  );
+}
+
+a:hover {
+  text-decoration: underline;
+}

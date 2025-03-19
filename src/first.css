@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  font-weight: bolder;
+  background-color: white;
+  transform: scale(0.8);
+}
+
+.languages {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btnGet {
+  background: linear-gradient(
+    90deg,
+    rgb(112, 6, 190),
+    rgb(109, 19, 169),
+    rgb(118, 41, 173),
+    rgb(84, 28, 181),
+    rgb(105, 12, 189)
+  );
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+  font-weight: bold;
+  width: 200px;
+  height: 45px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+}
+
+.btnGet:hover {
+  transform: translateY(-3px);
+}
+
+.services {
+  display: flex;
+  gap: 50px;
+  font-size: 18px;
+  direction: rtl; /* Pour aligner le texte en arabe */
+}
+
+.services p {
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: 20px;
+}
+
+.services p:hover {
+  color: rgb(112, 6, 190);
+}
+
+.img img {
+  height: 50px; /* Ajuste la hauteur du logo */
+}
