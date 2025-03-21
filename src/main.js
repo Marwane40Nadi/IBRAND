@@ -8,12 +8,9 @@ export default function Main() {
         الأوسط وأفريقيا وخارجهما
       </h1>
       <div id="divCircleServices">
-        <img src="/images/globe.png" alt="" id="circleServices"/>
-        <img src="/images/globe.png" alt="" id="circleServices"/>
-        <img src="/images/globe.png" alt="" id="circleServices"/>
-        <img src="/images/globe.png" alt="" id="circleServices"/>
-        <img src="/images/globe.png" alt="" id="circleServices"/>
-        <img src="/images/globe.png" alt="" id="circleServices"/>
+        {[...Array(6)].map((_, index) => (
+          <img key={index} src="/images/globe.png" alt="Service Icon" id="circleServices" />
+        ))}
       </div>
       <div id="divBtn">
         <button id="btn">ابدأ الآن</button>

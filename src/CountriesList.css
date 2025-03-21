@@ -1,33 +1,87 @@
-.p1-writing{
-    text-align: right;
-    font-size: 50px;
-    font-weight: 500;
+.countriesDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  margin-top: 5%;
+  padding: 20px;
 }
-.p2-writing{
-    text-align: right;
-    font-size: 30px;
+
+/* Image Styles */
+.countriesImg {
+  width: 200%; /* Keep it as it is in normal view */
+  height: 700px;
 }
-.p3-writing{
-    text-align: right;
-    font-size: 23px;
-    font-weight: light;
+
+/* Text Content */
+.p1-writing {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: right;
 }
-.coutriesImg{
-    width: 200%;
-    height: 700px;
+
+.p2-writing {
+  font-size: 30px;
+  text-align: right;
 }
-.countriesDiv{
-    display: flex;
+
+.p3-writing {
+  font-size: 23px;
+  font-weight: lighter;
+  text-align: right;
+}
+
+.a {
+  font-size: 23px;
+  font-weight: bold;
+  position: relative;
+  left: 90%;
+  top: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 575.98px) {
+  .countriesDiv {
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    gap: 20%;
-    margin-top: 10%;
-    transform: scale(0.8);
-}
-.a{
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .countriesDiv > :first-child {
+    order: 1; /* Text first */
+  }
+
+  .countriesImg {
+    order: 2; /* Image second */
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  .p1-writing {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .p2-writing {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .p3-writing {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .a {
+    left: 0;
+    top: 20px;
+    font-size: 18px;
+    text-align: center;
+    display: block;
     position: relative;
-    left: 90%;
-    top: 50px;
-    font-size: 23px;
-    font-weight: bold;
+    margin-top: 20px;
+  }
 }

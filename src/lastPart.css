@@ -1,16 +1,16 @@
+/* CTA Section */
 .cta-section {
   background: none;
   text-align: center;
   padding: 60px 20px;
   position: relative;
   top: 150px;
-}
+}  
 
 .cta-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   text-align: center;
   flex-direction: column;
   background-color: white;
@@ -18,14 +18,13 @@
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  height: 30%;
   width: 85%;
 }
 
 .cta-box h2 {
   font-size: 40px;
   margin-bottom: 10px;
-  font-weight: 600px;
+  font-weight: 600;
 }
 
 .cta-box p {
@@ -35,14 +34,7 @@
 }
 
 .cta-box button {
-  background: linear-gradient(
-    90deg,
-    rgb(112, 6, 190),
-    rgb(109, 19, 169),
-    rgb(118, 41, 173),
-    rgb(84, 28, 181),
-    rgb(105, 12, 189)
-  );
+  background: linear-gradient(90deg, rgb(112, 6, 190), rgb(105, 12, 189));
   border: none;
   color: white;
   cursor: pointer;
@@ -57,16 +49,10 @@
 }
 
 .cta-box button:hover {
-  background-color: linear-gradient(
-    90deg,
-    rgb(112, 6, 190),
-    rgb(109, 19, 169),
-    rgb(118, 41, 173),
-    rgb(84, 28, 181),
-    rgb(105, 12, 189)
-  );
+  background: linear-gradient(90deg, rgb(105, 12, 189), rgb(112, 6, 190));
 }
 
+/* Footer */
 .footer {
   background-color: #111014;
   color: white;
@@ -130,4 +116,90 @@
 
 .social-icons img:hover {
   filter: brightness(1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .cta-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .cta-box h2 {
+    font-size: 35px;
+  }
+
+  .cta-box p {
+    font-size: 16px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-column h3 {
+    font-size: 20px;
+  }
+
+  .footer-column ul li a {
+    font-size: 16px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .cta-box {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .cta-box h2 {
+    font-size: 28px;
+  }
+
+  .cta-box p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .cta-box button {
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-section {
+    top: 100px;
+  }
+
+  .cta-box h2 {
+    font-size: 24px;
+  }
+
+  .cta-box p {
+    font-size: 12px;
+  }
+
+  .cta-box button {
+    width: 90px;
+    height: 45px;
+    font-size: 12px;
+  }
 }

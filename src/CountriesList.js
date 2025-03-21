@@ -3,10 +3,10 @@ import "./CountriesList.css";
 export default function CountriesList() {
   return (
     <div className="countriesDiv">
-      <div>
-        <img src="/images/countries.jpg" className="coutriesImg" alt="countries img" />
+      <div className="img-container">
+        <img src="/images/countries.jpg" className="countriesImg" alt="countries img" />
       </div>
-      <div>
+      <div className="text-container">
         <p className="p1-writing">مواقعنا</p>
         <p className="p2-writing">
           تسمح شبكة خدماتنا المتنامية بتسليم أسرع وأوقات نقل أقصر

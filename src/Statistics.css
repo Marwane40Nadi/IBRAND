@@ -2,10 +2,23 @@
   margin-top: 10%;
   text-align: right;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns on large screens */
+  gap: 20px;
   width: 100%;
-  margin: 0;
+  padding: 20px;
+}
+
+.statistic {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.statistic:hover {
+  transform: translateY(-5px);
 }
 
 .statistics-container h2 {
@@ -14,6 +27,7 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: rgb(84, 28, 181);
   font-weight: bolder;
+  margin-bottom: 10px;
 }
 
 .statistics-p {
@@ -21,4 +35,33 @@
   font-weight: bold;
   position: relative;
   bottom: 10%;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .statistics-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .statistics-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 column on mobile */
+    text-align: center;
+  }
+
+  .statistics-p {
+    bottom: 0;
+    font-size: 18px;
+  }
+
+  .statistic {
+    padding: 15px;
+  }
+
+  .statistics-container h2 {
+    font-size: 40px;
+  }
 }

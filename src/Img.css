@@ -1,3 +1,13 @@
-.كيف{
-    height: 685px;
-}
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional */
+  }
+  

@@ -7,7 +7,7 @@ export default function Middle() {
   return (
     <>
       <Video />
-      <Cards />
+      <Cards /> 
       <Services />
       <Img />
     </>
