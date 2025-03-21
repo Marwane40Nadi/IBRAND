@@ -68,16 +68,16 @@ const Footers = () => {
             <p>شبكة التوصيل الرائدة في المنطقة بخدمات متكاملة وسريعة</p>
             <div className="social-icons">
               <a href="#">
-                <img src="facebook-icon.svg" alt="Facebook" />
+                <img src="/svg/facebook-icon.svg" alt="Facebook" />
               </a>
               <a href="#">
-                <img src="twitter-icon.svg" alt="Twitter" />
+                <img src="/svg/x-icon.svg" alt="Twitter" />
               </a>
               <a href="#">
-                <img src="instagram-icon.svg" alt="Instagram" />
+                <img src="/svg/instagram-icon.svg" alt="Instagram" />
               </a>
               <a href="#">
-                <img src="linkedin-icon.svg" alt="LinkedIn" />
+                <img src="/svg/linkedin-icon.svg" alt="LinkedIn" />
               </a>
             </div>
             <p>IBRAND 2025 ©</p>

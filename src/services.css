@@ -96,34 +96,8 @@
   border: none;
 }
 
-.service-btn {
-  background: linear-gradient(
-    90deg,
-    rgb(112, 6, 190),
-    rgb(109, 19, 169),
-    rgb(118, 41, 173),
-    rgb(84, 28, 181),
-    rgb(105, 12, 189)
-  );
-  border: none;
-  color: white;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  padding: 10px 20px;
-  border-radius: 35px;
-  margin-top: 20px;
-  font-size: 25px;
-  margin-top: 10%;
-  height: 70px;
-  width: 150px;
-  font-weight: bolder;
-}
 
-.service-btn:hover {
-  position: relative;
-  bottom: 5px;
-}
+
 
 .service-text {
   margin-top: 20px;
@@ -194,11 +168,6 @@
   }
   .service-arrow {
     display: none;
-  }
-  .service-btn {
-    width: 25%;
-    font-size: 18px;
-    padding: 10px;
   }
   .service-text {
     font-size: 16px;

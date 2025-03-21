@@ -32,7 +32,6 @@ export default function Services() {
               </div>
             ))}
           </div>
-          <button className="service-btn">خدماتنا</button>
           <p className="service-text">هل ترغب في الانضمام إلينا؟ <span className="الآن">ابدأ الآن</span></p>
         </div>
       </div>

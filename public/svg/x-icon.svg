@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+        <!-- Black background -->
+        <rect width="120" height="120" fill="black"/>
+        <!-- White foreground icon -->
+        <path fill="white" d="M90.64 10H109.26L70.49 56.29L116 110H81.02L52.6 76.14L20.62 110H2L43.26 59.91L0 10H36.52L62.38 41.29L90.64 10ZM84.48 100.55H94.17L31.05 19.02H20.49L84.48 100.55Z"/>
+    </svg>
