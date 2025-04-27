@@ -1,0 +1,170 @@
+#serDiv {
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  background-color: #fff;
+  margin-right: 2%;
+  transform: scale(0.8);
+  padding: 0;
+  margin-top: -250px;
+}
+
+#hero {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  position: relative;
+  right: -25%;
+  margin-top: 230px;
+}
+#tag {
+  display: inline-block;
+  background-color: #eee;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+#hero-title {
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 50px;
+  width: 900px;
+  text-align: right;
+}
+
+#hero-title span {
+  color: black;
+}
+
+#hero-text {
+  font-size: 23px;
+  color: #444;
+  position: relative;
+  right: 20%;
+}
+
+.service-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.service-icon {
+  height: 60px;
+  width: 60px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  width: 710px;
+  border: 2px solid rgb(112, 6, 190);
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.service-title {
+  flex-grow: 1;
+  text-align: right;
+  font-size: 30px;
+  margin-right: 5%;
+}
+
+.service-arrow {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-left: 10%;
+}
+
+.service-item:hover .service-arrow {
+  color: rgb(112, 6, 190);
+}
+.service-item:hover {
+  background-color: #ebebeb;
+  border: none;
+}
+
+
+
+
+.service-text {
+  margin-top: 20px;
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.الآن {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.الآن::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: width 0.2s ease-out;
+}
+
+.الآن:hover::after {
+  width: 0;
+}
+@media (max-width: 768px) {
+  #serDiv {
+    margin: 0;
+    transform: scale(1);
+    padding: 10px;
+  }
+  #hero {
+    max-width: 100%;
+    right: 0;
+    text-align: center;
+    margin-top: 50px;
+  }
+  #hero-title {
+    font-size: 28px;
+    width: auto;
+  }
+  #hero-text {
+    font-size: 16px;
+    right: 0;
+  }
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .service-item {
+    width: 90%;
+    font-size: 18px;
+  }
+  .service-title {
+    font-size: 16px;
+  }
+  .service-icon {
+    font-size: 35px;
+  }
+  .service-arrow {
+    display: none;
+  }
+  .service-text {
+    font-size: 14px;
+  }
+}

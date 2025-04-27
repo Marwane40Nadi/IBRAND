@@ -1,0 +1,172 @@
+nav {
+  display: flex;
+  background-color: #fff;
+  font-weight: bolder;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  transform: scale(0.8);
+  position: relative;
+  z-index: 100;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.middleSection {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 18px;
+  direction: rtl;
+}
+
+.middleSection p {
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.middleSection p:hover {
+  color: rgb(112, 6, 190);
+}
+
+.rightSection img {
+  height: 50px;
+}
+
+.burger {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  direction: rtl;
+}
+
+.theDiv,
+.theDiv2 {
+  height: 4px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+.theDiv2 {
+  width: 50%;
+  transition: width 0.3s ease;
+}
+
+.burger:hover .theDiv2 {
+  width: 100%;
+}
+
+.btnGet {
+  background: linear-gradient(
+    90deg,
+    rgb(112, 6, 190),
+    rgb(109, 19, 169),
+    rgb(118, 41, 173),
+    rgb(84, 28, 181),
+    rgb(105, 12, 189)
+  );
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  width: 200px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btnGet:hover {
+  transform: translateY(-3px);
+}
+
+.dropDownMenu {
+  position: absolute;
+  top: 70px;
+  right: 90%;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+  width: 200px;
+  direction: rtl;
+}
+
+.dropDownMenu p {
+  margin: 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.dropDownMenu p:hover {
+  color: rgb(112, 6, 190);
+}
+
+.hide {
+  display: none;
+}
+
+/* 🌐 Responsive Styles */
+@media (max-width: 768px) {
+  .middleSection {
+    display: none;
+  }
+
+  .leftSection{
+    display:none;
+  }
+  .btnGet {
+    display: none;
+  }
+
+  .dropDownMenu {
+    top: 60px;
+    right: 65%;
+    width: 180px;
+    padding: 20px;
+  }
+
+  nav {
+    padding: 10px 20px;
+  }
+
+  .rightSection img {
+    height: 40px;
+  }
+  nav{
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .rightSection img {
+    height: 35px;
+  }
+  nav{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leftSection{
+    display:none;
+  }
+  .dropDownMenu {
+    width: 160px;
+    padding: 15px;
+  }
+}
