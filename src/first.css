@@ -126,6 +126,9 @@ nav {
     display: none;
   }
 
+  .leftSection{
+    display:none;
+  }
   .btnGet {
     display: none;
   }
@@ -144,13 +147,24 @@ nav {
   .rightSection img {
     height: 40px;
   }
+  nav{
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 480px) {
   .rightSection img {
     height: 35px;
   }
+  nav{
+    justify-content: center;
+    align-items: center;
+  }
 
+  .leftSection{
+    display:none;
+  }
   .dropDownMenu {
     width: 160px;
     padding: 15px;

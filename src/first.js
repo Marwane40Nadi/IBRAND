@@ -26,8 +26,6 @@ export default function Navbar() {
         </div>
 
         <button className="btnGet">Get Started</button>
-        <CircleFlag countryCode="sa" height="30" />
-        <CircleFlag countryCode="gb" height="30" />
       </div>
 
       <div className="middleSection">

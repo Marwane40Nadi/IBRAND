@@ -1,11 +1,11 @@
 import "./services.css";
 const services = [
-  { icon: "🌍", title: "الاستيراد" },
-  { icon: "🌍", title: "التخليص الجمركي" },
-  { icon: "🌍", title: "التخزين والإيفاء بالطلبات" },
-  { icon: "🌍", title: "الشحن" },
-  { icon: "🌍", title: "مركز الاتصال" },
-  { icon: "🌍", title: "تحويل الأموال عند تحصيلها" },
+  { icon: "/images/الاستيراد.png", title: "الاستيراد" },
+  { icon: "/images/التخليص الجمركي.png", title: "التخليص الجمركي" },
+  { icon: "/images/التخزين والإيفاء بالطلبات.png", title: "التخزين والإيفاء بالطلبات" },
+  { icon: "/images/الشحن.png", title: "الشحن" },
+  { icon: "/images/مركز الاتصال.png", title: "مركز الاتصال" },
+  { icon: "/images/تحويل الأموال عند تحصيلها.png", title: "تحويل الأموال عند تحصيلها" },
 ];
 export default function Services() {
   return (
@@ -26,7 +26,7 @@ export default function Services() {
           <div className="service-grid">
             {services.map((service, index) => (
               <div key={index} className="service-item">
-                <span className="service-icon">{service.icon}</span>
+                <img src={service.icon} className="service-icon"/>
                 <span className="service-title">{service.title}</span>
                 <span className="service-arrow">←</span>
               </div>

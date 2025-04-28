@@ -37,13 +37,10 @@ h1 {
 }
 
 #circleServices {
-  border: 1px solid black;
-  border-radius: 50%;
   width: 150px;
   height: 150px;
   object-fit: cover;
 }
-
 #divBtn {
   display: flex;
   justify-content: center;
@@ -162,3 +159,4 @@ h1 {
     font-size: 16px;
   }
 }
+  

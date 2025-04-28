@@ -8,9 +8,12 @@ export default function Main() {
         الأوسط وأفريقيا وخارجهما
       </h1>
       <div id="divCircleServices">
-        {[...Array(6)].map((_, index) => (
-          <img key={index} src="/images/globe.png" alt="Service Icon" id="circleServices" />
-        ))}
+        <img src="/svg/storage.svg" alt="Service Icon" id="circleServices"/>
+        <img src="/svg/call-center.svg" alt="Service Icon" id="circleServices"/>
+        <img src="/svg/Money.svg" alt="Service Icon" id="circleServices"/>
+        <img src="/svg/Packaging.svg" alt="Service Icon" id="circleServices"/>
+        <img src="/svg/shipping.svg" alt="Service Icon" id="circleServices"/>
+        <img src="/svg/world.svg" alt="Service Icon" id="circleServices"/>
       </div>
       <div id="divBtn">
         <button id="btn">ابدأ الآن</button>
